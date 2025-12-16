@@ -111,7 +111,8 @@ body {
   font-family: var(--FF);
   background-color: var(--BGCOLOR);
   /* Fixing cut content from the top of the card in small screens (landscape mode) */
-  /* width: 100vw; */
+  width: 100vw;
+  /* Allow body to grow in height if content needs vertical space */
   min-height: 100vh;
   padding: 5rem 0;
 
@@ -150,7 +151,7 @@ body {
    6. COMPONENT STYLES
    ========================================================= */
 
-.profile-card {
+.card {
   max-width: 38.4rem;
   padding: 4rem;
   border-radius: 10px;
@@ -158,40 +159,40 @@ body {
   background-color: var(--BGCOLOR-CARD);
 }
 
-.profile-header {
+.card__header {
   text-align: center;
 }
 
-.profile-img {
+.card__image {
   max-width: 8.8rem;
   height: 8.8rem;
   border-radius: 50%;
 }
 
-.profile-name {
+.card__name {
   color: var(--FONT-COLOR);
 }
 
-.profile-location {
+.card__location {
   color: #c4f82a;
 }
 
-.profile-description {
+.card__description {
   color: var(--FONT-COLOR);
 }
 
-.social-profile-list {
+.card__socials-list {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
 }
 
-.social-profile-list li {
+.card__socials-list-item {
   list-style-type: none;
 }
 
-.social-profile:link,
-.social-profile:visited {
+.card__socials-link:link,
+.card__socials-link:visited {
   display: inline-block;
   width: 100%;
   padding: 1.2rem 0;
@@ -206,15 +207,15 @@ body {
   transition: all 0.3s;
 }
 
-.social-profile:hover,
-.social-profile:active {
+.card__socials-link:hover,
+.card__socials-link:active {
   background-color: #c4f82a;
   color: #333;
 }
 
 /* Tablets, 375px */
 @media (max-width: 24rem) {
-  .profile-card {
+  .card {
     margin: 0 2.4rem;
   }
 }

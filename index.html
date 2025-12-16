@@ -42,49 +42,47 @@
   </head>
   <body>
     <!-- Replacing former div-element with a main element for the card to be semantically correct and have one main-element on the page. -->
-    <main class="profile-card">
-      <header class="profile-header margin-bottom-md">
+    <main class="card">
+      <header class="card__header margin-bottom-md">
         <!-- 
         Providing width and height attribute to image so the browser knows how much space it occupies before it is loaded to prevent layout shift.
         Also leaving the 'alt' attribute empty to hide them from screen readers because image is decorative and the name "Jessica Randall" directly follows on the page.-->
         <img
           src="assets/images/avatar-jessica.jpeg"
           alt=""
-          class="profile-img margin-bottom-md"
+          class="card__image margin-bottom-md"
           width="176"
           height="176"
         />
 
         <div class="margin-bottom-md">
           <!-- Replacing former p-element with h1-element for the profile name to have a h1-element on the page. -->
-          <h1 class="profile-name inter-large-bold">Jessica Randall</h1>
-          <p class="profile-location inter-small-bold">
-            London, United Kingdom
-          </p>
+          <h1 class="card__name inter-large-bold">Jessica Randall</h1>
+          <p class="card__location inter-small-bold">London, United Kingdom</p>
         </div>
 
         <!-- Replacing former q-element with p-element for profile description because q is meant for inline quotations attributed to someone. -->
-        <p class="profile-description inter-small">
+        <p class="card__description inter-small">
           "Front-end developer and avid reader."
         </p>
       </header>
-      <ul class="social-profile-list">
-        <li>
-          <a href="#" class="social-profile inter-small-bold">GitHub</a>
+      <ul class="card__socials-list">
+        <li class="card__socials-list-item">
+          <a href="#" class="card__socials-link inter-small-bold">GitHub</a>
         </li>
-        <li>
-          <a href="#" class="social-profile inter-small-bold"
+        <li class="card__socials-list-item">
+          <a href="#" class="card__socials-link inter-small-bold"
             >Frontend Mentor</a
           >
         </li>
-        <li>
-          <a href="#" class="social-profile inter-small-bold">LinkedIn</a>
+        <li class="card__socials-list-item">
+          <a href="#" class="card__socials-link inter-small-bold">LinkedIn</a>
         </li>
-        <li>
-          <a href="#" class="social-profile inter-small-bold">Twitter</a>
+        <li class="card__socials-list-item">
+          <a href="#" class="card__socials-link inter-small-bold">Twitter</a>
         </li>
-        <li>
-          <a href="#" class="social-profile inter-small-bold">Instagram</a>
+        <li class="card__socials-list-item">
+          <a href="#" class="card__socials-link inter-small-bold">Instagram</a>
         </li>
       </ul>
     </main>
